@@ -7,7 +7,7 @@ variable "create_vpc" {
 variable "name" {
   description = "Name to be used on all the resources as identifier"
   type        = string
-  default     = ""
+  default     = "tester"
 }
 
 variable "cidr" {
@@ -2274,7 +2274,7 @@ variable "vpc_tags" {
 }
 
 variable "igw_tags" {
-  description = "Additional tags for the internet gateway"
+  description = "Additional tags for the internet gateway - depending"
   type        = map(string)
   default     = {}
 }
@@ -2370,7 +2370,7 @@ variable "intra_subnet_tags" {
 }
 
 variable "public_acl_tags" {
-  description = "Additional tags for the public subnets network ACL"
+  description = "Additional tagsss for the public subnets network ACL"
   type        = map(string)
   default     = {}
 }

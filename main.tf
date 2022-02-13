@@ -256,9 +256,9 @@ resource "aws_route_table" "private" {
   )
 }
 
-#################
+####################3
 # Database routes
-#################
+####################
 resource "aws_route_table" "database" {
   count = var.create_vpc && var.create_database_subnet_route_table && length(var.database_subnets) > 0 ? var.single_nat_gateway || var.create_database_internet_gateway_route ? 1 : length(var.database_subnets) : 0
 
